@@ -5,5 +5,4 @@ public interface PowerActions {
     String repressOpposition();
 
     String holdParade();
-
 }

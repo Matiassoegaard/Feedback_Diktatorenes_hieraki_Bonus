@@ -17,6 +17,4 @@ public abstract class Leader {
                             "\nCountry: " + country +
                             "\nYear In Power: " + yearInPower);
     }
-
-
 }

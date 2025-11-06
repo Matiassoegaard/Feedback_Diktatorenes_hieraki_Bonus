@@ -39,9 +39,4 @@ public class PoliticalDictator extends Leader implements PowerActions{
     public String holdParade(){
         return name + " is holding a political parade.";
     }
-
-
-
-
-
 }
