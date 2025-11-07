@@ -7,13 +7,13 @@ public class PoliticalDictator extends Leader implements PowerActions{
         this.partyName = partyName;
     }
 
-    //Metoder der er blevet implementeret fra super klassen Leader
+    //Metoder der er blevet implementeret fra super klassen Leader.
     @Override
     public void giveSpeech(){
         System.out.println(name + " gives a beautiful political speech.");
     }
 
-    //Metoder der er blevet implementeret fra super klassen Leader
+    //Metoder der er blevet implementeret fra super klassen Leader. Hvor i her bliver den tilføjet "Party name".
     @Override
     public void printDetails(){
         System.out.println("\nName: " + name +

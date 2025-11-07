@@ -8,12 +8,12 @@ public class MilitaryDictator extends Leader implements PowerActions{
         this.militaryRank = militaryRank;
     }
 
-    //Metoder der er blevet implementeret fra super klassen Leader
+    //Metoder der er blevet implementeret fra super klassen Leader.
     @Override
     public void giveSpeech() {
         System.out.println( name + " gives a fearful speech");
     }
-    //Metoder der er blevet implementeret fra super klassen Leader
+    //Metoder der er blevet implementeret fra super klassen Leader, Hvor her bliver den tilføjet "Military Rank".
     @Override
     public void printDetails() {
         System.out.println("\nName: " + name +
@@ -22,7 +22,7 @@ public class MilitaryDictator extends Leader implements PowerActions{
                             "\nMilitary Rank: " + militaryRank);
     }
 
-    //Metoder der er blevet implementeret og override fra interfacen PowerActions
+    //Metoder der er blevet implementeret og override fra interfacen PowerActions.
     @Override
     public void implementPolicy(String newPolicy) {
         System.out.println(name + " dictator implements a new policy: " + newPolicy); ;
@@ -34,7 +34,7 @@ public class MilitaryDictator extends Leader implements PowerActions{
         System.out.println(name + " dictator represses opposition");
     }
 
-    //Metoder der er blevet implementeret og override fra interfacen PowerActions
+    //Metoder der er blevet implementeret og override fra interfacen PowerActions.
     @Override
     public void holdParade() {
         System.out.println(name + " holds a big military parade");
