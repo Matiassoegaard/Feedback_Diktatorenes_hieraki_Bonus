@@ -13,7 +13,7 @@ public class SystemHandling {
 
     //Her får man listen af leaders
     public List<Leader> listOfLeaders(){
-            //Polymorfi. Laver en objekt "PoliticalDictator" som har "Leader" klassen som variable.
+            //Polymorfi. Laver et objekt "PoliticalDictator" som har "Leader" klassen som variable.
             //Dette virker på grund af "PoliticalDictator" er en subklasse af "Leader"
             Leader politicalLeader = new PoliticalDictator("Palpatine","Galactic Empire",20,"Sith Party");
             //Det samme sker her bare med "MilitaryDictator" klassen.
@@ -45,7 +45,7 @@ public class SystemHandling {
     }
 
 
-    //Denne håndterer menu'en og mulighed for at vælge hvad man ville se.
+    //Denne metode håndterer menu'en og muligheden for at vælge hvad man ville se.
     public void handleSystem(){
         Scanner input = new Scanner(System.in);
 
