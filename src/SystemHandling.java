@@ -19,10 +19,12 @@ public class SystemHandling {
             Leader politicalLeader = new PoliticalDictator("Palpatine","Galactic Empire",20,"Sith Party");
             //Det samme sker her bare med "MilitaryDictator" klassen.
             Leader militaryLeader = new MilitaryDictator("Zod","Krypton",15,"General");
+            Leader pacifistLeader = new PacifistLeader("Ghandi","India",20);
 
             List<Leader> listOfLeaders = new ArrayList<>();
             listOfLeaders.add(politicalLeader);
             listOfLeaders.add(militaryLeader);
+            listOfLeaders.add(pacifistLeader);
             return listOfLeaders;
     }
 
@@ -33,7 +35,8 @@ public class SystemHandling {
         leader.printDetails();
         leader.giveSpeech();
 
-        //Tjekker om objektet er en instance af PowerAction (I denne opgave er begge objekter en instance af PowerActions, så det gør den lige meget)
+        //PacifistLeader har ikke implementeret PowerAction så den går videre til "else"-statementet.
+        //Tjekker om objektet er en instance af PowerAction (Har tilføjet en ny klasse PacifistLeader som ikke har implementeret PowerAction)
         if (leader instanceof PowerActions){
             //Hvis objektet er en instance af PowerAction, caster den leader objekt, fra Leader typen til typen PowerAction.
             //så nu kan leader objektet kalde på de metoder som PowerAction har.
@@ -42,6 +45,8 @@ public class SystemHandling {
             powerActions.repressOpposition();
             powerActions.implementPolicy("New Policy");
             powerActions.holdParade();
+        } else {
+            System.out.println("This leader does not need power or manipulation to succeed");
         }
     }
 
