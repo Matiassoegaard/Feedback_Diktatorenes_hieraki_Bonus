@@ -13,7 +13,7 @@ public class PoliticalDictator extends Leader implements PowerActions{
         System.out.println(name + " gives a beautiful political speech.");
     }
 
-    //Metoder der er blevet implementeret fra super klassen Leader. Hvor i her bliver den tilføjet "Party name".
+    //Metoder der er blevet implementeret fra super klassen Leader. Hvor her bliver der tilføjet "Party name".
     @Override
     public void printDetails(){
         System.out.println("\nName: " + name +

@@ -13,7 +13,7 @@ public class MilitaryDictator extends Leader implements PowerActions{
     public void giveSpeech() {
         System.out.println( name + " gives a fearful speech");
     }
-    //Metoder der er blevet implementeret fra super klassen Leader, Hvor her bliver den tilføjet "Military Rank".
+    //Metoder der er blevet implementeret fra super klassen Leader, Hvor her bliver der tilføjet "Military Rank".
     @Override
     public void printDetails() {
         System.out.println("\nName: " + name +
